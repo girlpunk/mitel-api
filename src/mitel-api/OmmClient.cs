@@ -50,7 +50,7 @@ namespace mitelapi
 
         protected virtual bool CertificateValidationCallback(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
         {
-            return sslPolicyErrors == SslPolicyErrors.None;
+            return true;
         }
 
         private async void SendPing(object state)
